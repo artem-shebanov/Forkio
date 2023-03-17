@@ -1,5 +1,5 @@
 {
-  "name": "gulp_scss",
+  "name": "gulp",
   "version": "9.2.0",
   "type": "module",
   "main": "gulpfile.js",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/Artemchik/homework_2_advanced_html.git"
+    "url": "git+https://gitlab.com/Artemchik.git"
   },
   "author": "Artem Shebanov",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/Artemchik/homework_2_advanced_html/issues"
+    "url": "https://gitlab.com/Artemchik/issues"
   },
   "homepage": "https://gitlab.com/Artemchik",
   "devDependencies": {
@@ -41,7 +41,7 @@
     "gulp-zip": "^5.1.0",
     "sass": "^1.59.2",
     "swiper": "^9.1.0",
-    "webp-converter": "^2.2.3",
+    "webp-converter": "2.2.3",
     "webpack": "^5.76.1",
     "webpack-stream": "^7.0.0"
   }

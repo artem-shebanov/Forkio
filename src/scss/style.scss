@@ -44,7 +44,6 @@ header{
 	}
 }
 .navbar{
-    //height: 100px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -156,4 +155,71 @@ header{
     .download_btn{
        width: 500px;
     }
+}
+//About Us
+.about_us{
+	//Поменять маргины
+	background: url("/img/about_us_bg.png");
+	&_title_wrapper{
+	padding-top: 110px;
+	display: flex;
+	justify-content: center;
+	}
+	&_title{
+	font-family: Montserrat;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 50px;
+	color: #FFFFFF;
+	}
+	&_items_wrapper{
+		margin-top: 80px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 90px;
+	}
+	&_item{
+		width: 325px;
+		height: 150px;
+		text-align: center;
+	}
+	&_item_text{
+	//padding-top:20px ;
+	font-family: Lato;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 24px;
+	color: #FFFFFF;
+	}
+	&_bottom_text_wrapper{
+		margin-top: 110px;
+		text-align: center;
+	}
+	&_bottom_text{
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #A291A5;
+	}
+	&_img_1{
+		margin-bottom: 30px;
+	}
+	&_img_2{
+		margin-bottom: 23px;
+	}
+	&_img_3{
+		margin-bottom: 10px;
+	}
+	&_img_4{
+		margin-bottom: 30px;
+	}
+	&_img_5{
+		margin-bottom: 20px;
+	}
+	&_img_6{
+		margin-bottom: 22px;
+	}
 }

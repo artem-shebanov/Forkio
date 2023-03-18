@@ -2,15 +2,18 @@
 @import "mixin.scss";
 @import "var.scss";
 
-*,*::after,*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.container{
-    margin: 0 auto;
-    padding: 0 10px;
-    width: 1200px;
+
+.container {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 1200px;
 }
 
 .present {
@@ -43,7 +46,7 @@
 		gap: 14px;
 	}
 
-	&__buttons-item{
+	&__buttons-item {
 		@include flex_center;
 		padding: 3px 12px;
 		text-decoration: none;

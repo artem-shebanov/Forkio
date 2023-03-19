@@ -32,12 +32,12 @@
 
 	&__text {
 		font-family: 'lato', sans-serif;
-		font-weight: 400;
 		font-size: 21px;
 		line-height: 32px;
 		text-align: center;
-		margin-top: 35px;
 		color: #323232;
+		width: 860px;
+		margin: 35px auto;
 	}
 
 	&__buttons {
@@ -72,4 +72,98 @@
 			text-align: center;
 		}
 	}
+}
+
+.features {
+	background-color: #F4F4F4;
+	font-family: "montserrat", sans-serif;
+	margin-top: 70px;
+	position: relative;
+	width: 100%;
+	
+
+	&__section {
+		padding-top: 100px;
+		display: flex;
+		gap: 90px;
+	}
+
+	&__offers-block,
+	&__offers-block-2,
+	&__offers-block-3,
+	&__offers-block-4 {
+		display: flex;
+		align-items: center;
+		margin-bottom: 35px;
+	}
+
+	&__block-icon {
+		img {
+			margin-left: 2px;
+		}
+	}
+
+	&__block-icon-3 {
+		img {
+			margin-left: 14px;
+		}
+	}
+
+	&__block-icon-4 {
+		img {
+			margin-left: 10px;
+		}
+	}
+
+	&__block-page {
+		padding-left: 18px;
+	}
+
+	&__block-page-2 {
+		padding-left: 40px;
+	}
+
+	&__block-page-3 {
+		padding-left: 55px;
+	}
+
+	&__block-page-4 {
+		margin-left: 47px;
+	}
+
+	&__page-title {
+		font-size: 16px;
+		line-height: 21px;
+	}
+
+	&__page-text,
+	&__page-text-2,
+	&__page-text-3,
+	&__page-text-4 {
+		font-size: 14px;
+		line-height: 21px;
+		text-align: start;
+		color: #848E97;
+		width: 380px;
+		margin-top: 12px;
+	}
+
+	&__showcase {
+		
+	}
+
+	&__showcase-title {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 50px;
+		color: $main_color;
+		margin-left: 10px;
+	}
+
+&__showcase-img {
+	position: absolute;
+	left: 50%;
+}
+
 }

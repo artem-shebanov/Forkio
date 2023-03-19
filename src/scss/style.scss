@@ -27,6 +27,15 @@ header{
 }
 .logo{
 	cursor: pointer;
+	img{
+		width: 40px;
+		height: 40px;
+	}
+	.logo_hover{
+		position: absolute;
+		opacity: 0;
+		transition-duration: 0.5s;
+	}
 }
 .logo_wrapper {
 	width: 165px;
@@ -44,6 +53,7 @@ header{
 		color: #8D81AC;
 		align-self: center;
 		padding-top: 7px;
+		transition: 0.5s;
 	}
 }
 .navbar{
@@ -63,6 +73,7 @@ header{
             width: 100%;
             text-decoration: none;
             color: #8D81AC;
+			transition-duration: 0.5s;
         }
     }
 }
@@ -128,7 +139,9 @@ header{
     align-items: center;
     transform: translate(-50%,-50%);
 }
-
+.btn{
+	transition-duration: 1.5s;
+}
 .download_btn {
 	cursor: pointer;
 	width: 390px;
@@ -144,6 +157,7 @@ header{
 		font-weight: 700;
 		line-height: 22px;
 		color: #FFFFFF;
+		transition-duration: 0.5s;
 	}
 
 	&_text_bottom {
@@ -161,23 +175,22 @@ header{
 //       width: 500px;
 //    }
 //}
-.logo:hover{
-	fill: #FFFFFF;
-}
-.logo_title:hover{
+.logo_wrapper:hover > .logo_title{
 	color: #FFFFFF;
-	transition-duration: 0.5s;
+	
+}
+.logo_wrapper:hover >.logo{
+	.logo_hover{
+	opacity: 1;
+	}	
 }
 .nav_item_link:hover{
 	color: #FFFFFF;
-	transition-duration: 0.5s;
 }
 .btn:hover{
 	background: #FFFFFF;
 	border: 2px solid #8D81AC;
-	transition-duration: 1.5s;
 }
 .btn:hover > .btn_text{
 	color: #8D81AC;
-	transition-duration: 0.5s;
 }

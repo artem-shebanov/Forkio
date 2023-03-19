@@ -159,7 +159,7 @@ header{
 //About Us
 .about_us{
 	//Поменять маргины
-	background: url("/img/about_us_bg.png");
+	background: url("/img/about_us_bg.png") center/cover no-repeat;
 	&_title_wrapper{
 	padding-top: 110px;
 	display: flex;

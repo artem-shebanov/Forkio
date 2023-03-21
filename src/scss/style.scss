@@ -83,11 +83,10 @@
 	font-family: "montserrat", sans-serif;
 	margin-top: 70px;
 	position: relative;
-	width: 100%;
 	padding-top: 100px;
 	display: flex;
 	flex-direction: row-reverse;
-	flex-wrap: wrap;
+	justify-content: center;
 	gap: 90px;
 
 
@@ -167,15 +166,23 @@
 	}
 
 	&__showcase-img>img {
-		width: 100%;
+		width: 90%;
 	}
 }
 
 @media screen and (max-width: 992px) {
 	.features {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
 		&__showcase-img {
 			position: static;
 			width: 90%;
+			margin-left: auto;
+		}
+
+		&__showcase-img>img {
 			margin-left: auto;
 		}
 

@@ -75,6 +75,7 @@
 		}
 	}
 }
+
 // revolutionary editor END
 
 .features {
@@ -83,13 +84,12 @@
 	margin-top: 70px;
 	position: relative;
 	width: 100%;
+	padding-top: 100px;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	gap: 90px;
 
-
-	&__section {
-		padding-top: 100px;
-		display: flex;
-		gap: 90px;
-	}
 
 	&__offers-block,
 	&__offers-block-2,
@@ -100,7 +100,7 @@
 		margin-bottom: 35px;
 	}
 
-	&__block-icon {
+	&__block-icon-1 {
 		img {
 			margin-left: 2px;
 		}
@@ -131,7 +131,7 @@
 	}
 
 	&__block-page-4 {
-		margin-left: 47px;
+		padding-left: 47px;
 	}
 
 	&__page-title {
@@ -147,62 +147,88 @@
 		line-height: 21px;
 		text-align: start;
 		color: #848E97;
-		width: 380px;
+		width: 376px;
 		margin-top: 12px;
 	}
 
-	&__showcase {
-
-	}
-
 	&__showcase-title {
-		width: 553px;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 48px;
 		font-weight: 700;
 		line-height: 50px;
 		color: $main_color;
-		margin-left: 10px;
 	}
 
-&__showcase-img {
-	position: absolute;
-	left: 50%;
-}
+	&__showcase-img {
+		position: absolute;
+		left: 49%;
+		bottom: 0;
+		padding-top: 60px;
+	}
 
+	&__showcase-img>img {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 992px) {
-	.present {
-		&__title {
-			font-size: 42px;
-			line-height: calc(42px / 42px * 100%);
+	.features {
+		&__showcase-img {
+			position: static;
+			width: 90%;
 			margin-left: auto;
-			margin-right: auto;
-			max-width: 598px;
 		}
+
+		&__showcase-title {
+			font-size: 42px;
+			line-height: 44px;
+		}
+
+		&__page-text,
+		&__page-text-2,
+		&__page-text-3,
+		&__page-text-4 {
+			width: 100%;
+		}
+
+
 	}
 }
 
-@media screen and (max-width: 582px) {
-	.present {
-		&__title {
-			font-size: 26px;
-			line-height: 28px;
-			margin-left: auto;
-			margin-right: auto;
+@media screen and (max-width: 540px) {
+	.features {
+
+		&__offers-block,
+		&__offers-block-2,
+		&__offers-block-3,
+		&__offers-block-4 {
+			flex-direction: column;
 		}
 
-		&__text {
-			font-size: 14px;
-			line-height: 20px;
+		&__page-text,
+		&__page-text-2,
+		&__page-text-3,
+		&__page-text-4 {
+			width: 100%;
+			text-align: center;
 		}
 
-		&__buttons {
-			width: 251px;
-			flex-wrap: wrap;
-			margin-right: auto;
-			margin-left: auto;
+		&__page-title {
+			text-align: center;
+			line-height: 16px;
+		}
+
+		&__showcase-title {
+			text-align: center;
+			font-size: 32px;
+			line-height: 32px;
+		}
+
+		&__block-page,
+		&__block-page-2,
+		&__block-page-3,
+		&__block-page-4 {
+			padding-left: 0;
 		}
 	}
 }

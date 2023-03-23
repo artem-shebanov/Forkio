@@ -2,6 +2,8 @@
 	font-size: 14px;
 	font-weight: 400;
 }
-@mixin main_color {
-	color: #8D81AC;
+@mixin flex_center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

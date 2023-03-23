@@ -14,4 +14,4 @@ export function testWebP(callback) {
     }else{
     document.documentElement.classList.add('no-webp');
     }
-    });
+    }); 

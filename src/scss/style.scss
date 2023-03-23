@@ -33,7 +33,7 @@ header{
 .burger_menu{
 	display: none;
 	position: absolute;
-	right: 20px;
+	right: 20px ;
 	top: 50px;
 	flex-direction: column;
 	gap: 7px;
@@ -43,6 +43,7 @@ header{
 		background: #FFFFFF;
 		border: 1px solid #FFFFFF;
 		border-radius: 20px;
+		transition-duration: 0.3s;
 	}
 	.line_unique{
 		align-self:end;
@@ -316,7 +317,7 @@ header{
 		gap: 0;
 	}
 	.burger_menu.active + .navbar{
-		margin: 0 20%;
+		left: none;
 		display: flex;
 		margin-top: 25px;
 		z-index: 1;
